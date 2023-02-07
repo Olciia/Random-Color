@@ -1,0 +1,65 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: rgb(183, 224, 240);
+}
+.kontener{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.kontener .kolor{
+    list-style: none;
+    margin: 13px;
+    padding: 7px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(52, 87, 220, 0.3);
+    transition: transform 0.3s ease;
+}
+.kontener .kolor:active{
+    transform: scale(0.95);
+}
+.kolor .prostok{
+    width: 185px;
+    height: 188px;
+    border-radius: 5px;
+    background: plum;
+}
+.kolor:hover .szescian {
+    filter: brightness(106%);
+}
+.kolor .szescian{
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.zmiana-kolorku{
+    margin-top: 30px;
+    margin-left: 50%;
+    position: relative;
+    bottom: 40px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    background: plum;
+    border: 2px solid white;
+    box-shadow: 0 15px 25px rgba(52, 87, 220, 0.2);
+    transform: translateX(-50%);
+}
